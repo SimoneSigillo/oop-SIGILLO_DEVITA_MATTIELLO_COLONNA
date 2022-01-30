@@ -3,6 +3,6 @@ Questo repository contiene il materiale necessario alla realizzazione del gioco 
 
 Classe base: questo file può essere importato in Python e contiene tutte le funzioni utili alla scrittura del codice di gioco; 
 
-il diagramma di flusso: questo file contiene il diagramma di flusso che illustra il funzionamento teorico del gioco;
+Il diagramma di flusso: questo file contiene il diagramma di flusso che illustra il funzionamento teorico del gioco;
 
-documentazione: questo file contiene la documentazione relativa al gioco. 
+Documentazione: questo file contiene la documentazione relativa al gioco. 
