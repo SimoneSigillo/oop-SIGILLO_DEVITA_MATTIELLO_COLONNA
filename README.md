@@ -9,4 +9,4 @@ Questo repository contiene il materiale necessario alla realizzazione del gioco 
 
 [Materiale](https://github.com/SimoneSigillo/oop-SIGILLO_DEVITA_MATTIELLO_COLONNA/tree/main/Materiale): in questa cartella è presente materiale innerente sia alla programmazione OOP, quindi esempi di classi e oggetti. Sia materiale inerente alla teoria del calcolo combinatorio, ovvero le varie forumle.
 
-[Interfaccia](https://github.com/SimoneSigillo/oop-SIGILLO_DEVITA_MATTIELLO_COLONNA/tree/main/Interfaccia): in questa cartella sono presenti i disegni fatti a mano delle ipotetiche interfacce del gioco.
+[Interfaccia](https://github.com/SimoneSigillo/oop-SIGILLO_DEVITA_MATTIELLO_COLONNA/tree/main/Interfaccia): in questa cartella sono presenti i disegni fatti a mano delle interfacce del gioco.
