@@ -238,5 +238,6 @@ class calcComb():
                 casifav += 1
         
         Prob = casifav/(len(self.__anagrammi))
+        return Prob
 
     
