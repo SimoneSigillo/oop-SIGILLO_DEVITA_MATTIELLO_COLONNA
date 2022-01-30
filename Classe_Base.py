@@ -44,10 +44,6 @@ class calcComb():
     def get_listStringa(self):
         return self.__listStringa
 
-    def setStringa(self):
-        self.__stringa = str
-        
-
     def charRipetuti(self):
 
         word = self.liststringa  
@@ -133,13 +129,13 @@ class calcComb():
     # PERMUTAZIONI
 
     def nPermutSenzaRip(self):
-
-        return calcComb.fattoriale(self.__N)
+        NPSR = calcComb.fattoriale(self.__N)
+        return NPSR
      
 
     def nPermutConRip(self):
-
-        return calcComb.fattoriale(self.__N)/calcComb.charRipetuti(self.__count)
+        NPCR = calcComb.fattoriale(self.__N)/calcComb.charRipetuti(self.__count)
+        return NPCR
 
     def PermutSenzaRip(self):
         import itertools
@@ -162,15 +158,18 @@ class calcComb():
     # DISPOSIZIONI
 
     def nDispSemplSenzaRip(self,k):
-       if self.__N >= k:
-           return calcComb.fattoriale(self.__N) / calcComb.fattoriale(self.__N-k)
-       else:
+        if self.__N >= k:
+               NDSSR = calcComb.fattoriale(self.__N) / calcComb.fattoriale(self.__N-k)
+        else:
            print("Si tratta di disposizini semplici!!! n>k")
+        return NDSSR
+      
+            
         
 
     def nDispSemplConRip(self,k):
-
-        return self.__N**k
+        NDSCR = self.__N**k
+        return NDSCR
 
     def dispSemplConRip(self):
         import itertools
@@ -191,12 +190,13 @@ class calcComb():
     # COMBINAZIONI
 
     def nCombSemplSenzaRip(self,k):
+        NCSSR = calcComb.fattoriale(self.__N) / (calcComb.fattoriale(k) * calcComb.fattoriale(self.__N-k))
 
-        return calcComb.fattoriale(self.__N) / (calcComb.fattoriale(k) * calcComb.fattoriale(self.__N-k))
+        return NCSSR
 
     def nCombSemplConRip(self,k):
- 
-        return calcComb.fattoriale(self.__N+k-1) / (calcComb.fattoriale(k) * calcComb.fattoriale(self.__N-1))
+        NCSCR = calcComb.fattoriale(self.__N+k-1) / (calcComb.fattoriale(k) * calcComb.fattoriale(self.__N-1))
+        return 
 
 
     def combSenzaRip(self,k):
