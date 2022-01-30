@@ -1,6 +1,4 @@
-# classe calcolo combinatorio
-# link file SRS: https://docs.google.com/document/d/1UbxKWaDN-DuHFWTtjGtcsY323sjho0LahW45FWliaH4/edit?usp=sharing
-from itertools import *
+from itertools import itertool
 # all'interno della classe vi sono alcune variabili ad esempio "n" doppie poichè n è presente sia come variabile di istanza e viene usata in alcuni metodi,
 # mentre in altre funzioni viene data in input come ad esempio nella funzione che restituisce il coefficiente binomiale
 def anagrammi(self): 
@@ -240,5 +238,5 @@ class calcComb():
                 casifav += 1
         
         Prob = casifav/(len(self.__anagrammi))
-        pass
+
     
