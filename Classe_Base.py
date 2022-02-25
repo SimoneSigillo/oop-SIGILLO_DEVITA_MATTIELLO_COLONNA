@@ -1,26 +1,9 @@
-from itertools import itertool
+import itertools
+
 # all'interno della classe vi sono alcune variabili ad esempio "n" doppie poichè n è presente sia come variabile di istanza e viene usata in alcuni metodi,
 # mentre in altre funzioni viene data in input come ad esempio nella funzione che restituisce il coefficiente binomiale
-def anagrammi(self): 
-        import itertools
-        '''
-        word -> deve contenere la stringa da analizzare
-        carattere -> è il dictionary all'interno del quale salvare le informazioni 
-        count -> contiene il numero totale di ripetizioni
-        nCaratteri -> contiene il numero di caratteri che si ripetono
-        '''
-        listapermutazioni = list(itertools.permutations(self.__stringa))
-        temp = ''
-        anagrammi = []
-        for i in listapermutazioni:
-            for carattere in i:
-                
-                temp += carattere 
 
-            anagrammi.append(temp)
-            
-            temp = ''
-        return anagrammi 
+
 class calcComb():
     '''
     lingua = input() #questa potrebbe anche essere inizializzata come attributo di classe, indeciso se di classe o di instanaza 
@@ -30,7 +13,7 @@ class calcComb():
         self.__N = len(stringa)
         self.__stringa = stringa
         self.__listStringa = list(stringa)
-        self.__anagrammi = anagrammi(self.__stringa)    
+        self.__anagrammi = []  # inizialmente lasciala vuota    
         self.__presenza = None #questa potrebbe anche essere inizializzata come attributo di classe, indeciso se di classe o di instanaza 
     '''
     def selezione_lingua(self):
@@ -46,8 +29,10 @@ class calcComb():
 
     def charRipetuti(self):
 
-        word = self.liststringa  
+        word = self.get_listStringa() 
+        # per accedere alle variabili bisogna usare le apposite funzioni GET dichiarate  
 
+        print(word)
         carattere = {}
 
         nCaratteri = 0
@@ -55,11 +40,10 @@ class calcComb():
         count = 0
 
         for i in word:
-
             if (i in carattere):  
-                carattere[str(i)] += 1
+                carattere[i] += 1
             else:
-                carattere[str(i)] = 1 
+                carattere[i] = 1 
 
         for i in carattere:
             if carattere[i]>1: 
@@ -82,9 +66,12 @@ class calcComb():
 
         return Presenza
     '''
+
     
-    def confUtilD(self,word):  #verifica se la parola presa in input come attributo di istanza è presente nel dizionario
-            
+    #def confUtilD(self,word):  #verifica se la parola presa in input come attributo di istanza è presente nel dizionario
+        
+    def confUtilD(self):
+    
         f = open('r')   #f = open(lingua, 'r')
         
         riga = f.readline()
@@ -213,7 +200,7 @@ class calcComb():
 
 
     def combConRip(self,k):
-        import itertools
+        #import itertools è già importato nel file
         listacombinazioni = list(itertools.combinations_with_replacement(self.__stringa, k))
         temp = ''
         comb = []
@@ -241,3 +228,12 @@ class calcComb():
         return Prob
 
     
+if __name__ == '__main__':
+    print('main.py - maCoding')
+
+    str = calcComb("agtosmcrhgiwos")
+    print(str.charRipetuti())
+    print(str.combConRip(3))
+    print(str.combSenzaRip(3))
+
+
