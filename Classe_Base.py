@@ -15,12 +15,7 @@ class calcComb():
         self.__listStringa = list(stringa)
         self.__anagrammi = []  # inizialmente lasciala vuota    
         self.__presenza = None #questa potrebbe anche essere inizializzata come attributo di classe, indeciso se di classe o di instanaza 
-    '''
-    def selezione_lingua(self):
-        lingua = {"Italiano":"word.italian.txt"}
-        lingua["Italiano"]  #in questo punto potrebbe essere integrato un'input per chiedere all'utente la lingua del gioco
-        return lingua #da discutere come usare questa funzione, fino a quel punto la escludo dalle variabili prese dal confutil
-    '''
+
     def get_stringa(self):
         return self.__stringa
 
@@ -53,31 +48,17 @@ class calcComb():
         Variabili_anagrammi = [count,nCaratteri,carattere]
         
         return Variabili_anagrammi
-
-    '''def confUtil(self,lingua):
-        
-        f = open(lingua, 'r')
-        
-        riga = f.readline()
-        Presenza == False
-        for riga in f:
-            if self.__stringa == riga[:-1]:
-                Presenza == True
-
-        return Presenza
-    '''
-
     
     #def confUtilD(self,word):  #verifica se la parola presa in input come attributo di istanza è presente nel dizionario
         
-    def confUtilD(self):
+    def confUtilD(self,parola):
     
         f = open('r')   #f = open(lingua, 'r')
         
         riga = f.readline()
         self.__presenza == False
         for riga in f:
-            if word == riga[:-1]:
+            if parola == riga[:-1]:
                 self.__presenza == True
 
         return self.__presenza
