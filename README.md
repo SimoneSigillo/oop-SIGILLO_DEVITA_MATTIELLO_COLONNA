@@ -3,7 +3,7 @@ Questo repository contiene il materiale necessario alla realizzazione del gioco 
 
 [Classe Base](https://github.com/SimoneSigillo/oop-SIGILLO_DEVITA_MATTIELLO_COLONNA/blob/main/Classe_Base.py): questo file può essere importato in Python e contiene tutte le funzioni utili alla scrittura del codice di gioco.
 
-[Diagramma di flusso](https://github.com/SimoneSigillo/oop-SIGILLO_DEVITA_MATTIELLO_COLONNA/blob/main/Diagramma_di_flusso.pdf): questo file contiene il diagramma di flusso che illustra il funzionamento teorico del gioco.
+[Diagramma di flusso](https://github.com/SimoneSigillo/oop-SIGILLO_DEVITA_MATTIELLO_COLONNA/blob/main/Diagramma_di_flusso_v1.2.pdf): questo file contiene il diagramma di flusso che illustra il funzionamento teorico del gioco.
 
 [Documentazione](https://github.com/SimoneSigillo/oop-SIGILLO_DEVITA_MATTIELLO_COLONNA/blob/main/Documentazione_oop_v1.3.pdf): questo file contiene tutta la documentazione relativa al gioco. 
 
